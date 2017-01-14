@@ -6,7 +6,7 @@ ENV JIRA_HOME     	/var/atlassian/application-data/jira
 ENV JIRA_VERSION  	7.3.0
 ENV TIME_ZONE 		America/Sao_Paulo
 
-ADD https://downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-${JIRA_VERSION}.tar.gz ${ATLASSIAN_HOME}
+ADD https://downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-${JIRA_VERSION}.tar.gz ${ATLASSIAN_HOME}/
 #ADD http://192.168.1.77/atlassian-jira-software-${JIRA_VERSION}.tar.gz ${ATLASSIAN_HOME}/
 
 RUN ls /opt/atlassian -l
