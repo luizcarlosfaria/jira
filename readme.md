@@ -1,6 +1,6 @@
 # Supported tags and respective ```Dockerfile``` links
 
-* [```7.3.0```](https://github.com/docker-gallery/jira/tree/v.7.3.0), ```latest``` [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.3.0/Dockerfile)
+* [```7.3.0```](https://github.com/docker-gallery/jira/tree/v.7.3.0), [```latest```](https://github.com/docker-gallery/jira/blob/master/Dockerfile)
 
 ## How to use this image
 
