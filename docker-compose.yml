@@ -1,12 +1,16 @@
-version: '3'
+version: '3.3'
 
 services:
   jira:
     image: luizcarlosfaria/jira:7.5.1
-  volumes:
-    - ./data/:/var/atlassian/application-data/jira/
-    - ./jira/:/opt/atlassian/jira/
+    # ports:
+    #   - "8081:8080"
+    volumes:
+      - ./data/:/var/atlassian/application-data/jira/
+    networks:
+      - front
 
-netwotks:
+
+networks:
   front:
-    external:true
+    external: true

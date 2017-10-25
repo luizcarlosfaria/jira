@@ -6,7 +6,7 @@ ENV JIRA_HOME     				/var/atlassian/application-data/jira
 ENV JIRA_EXPORT                 /var/atlassian/application-data/jira/export/
 ENV JIRA_VERSION  				7.5.1
 ENV TIME_ZONE 					America/Sao_Paulo
-ENV MYSQL_CONNECTOR_VERSION		5.1.40
+ENV MYSQL_CONNECTOR_VERSION		5.1.44
 
 
 ADD https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz ${ATLASSIAN_HOME}/
