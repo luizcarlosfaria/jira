@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  jira:
+    image: luizcarlosfaria/jira:7.5.1
+  volumes:
+    - ./data/:/var/atlassian/application-data/jira/
+    - ./jira/:/opt/atlassian/jira/
+
+netwotks:
+  front:
+    external:true
