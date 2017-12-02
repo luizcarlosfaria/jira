@@ -26,6 +26,6 @@ RUN tar -xzf ${ATLASSIAN_HOME}/atlassian-jira-software-${JIRA_VERSION}.tar.gz -C
 &&  echo "${TIME_ZONE}" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 
 EXPOSE 8080 8005
-VOLUME ["${JIRA_HOME}", "${JIRA_INSTALL}"]
+VOLUME ["${JIRA_HOME}"]
 WORKDIR ${JIRA_INSTALL}/bin
 ENTRYPOINT ["./start-jira.sh", "-fg"]
