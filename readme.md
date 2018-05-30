@@ -1,7 +1,11 @@
 # Supported tags and respective ```Dockerfile``` links
 
+* [```7.9.2```](https://github.com/docker-gallery/jira/tree/v.7.9.2), [```latest```](https://github.com/docker-gallery/jira) [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.9.2/Dockerfile)
+
 * [```7.6.0```](https://github.com/docker-gallery/jira/tree/v.7.6.0), [```latest```](https://github.com/docker-gallery/jira) [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.6.0/Dockerfile)
+
 * [```7.5.1```](https://github.com/docker-gallery/jira/tree/v.7.5.1)  [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.5.1/Dockerfile)
+
 * [```7.3.0```](https://github.com/docker-gallery/jira/tree/v.7.3.0)  [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.3.0/Dockerfile)
 
 ## How to use this image
