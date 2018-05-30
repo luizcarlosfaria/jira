@@ -4,17 +4,16 @@ ENV ATLASSIAN_HOME  			/opt/atlassian
 ENV JIRA_INSTALL    			/opt/atlassian/jira
 ENV JIRA_HOME     				/var/atlassian/application-data/jira
 ENV JIRA_EXPORT                 /var/atlassian/application-data/jira/export
-ENV JIRA_VERSION  				7.6.0
+ENV JIRA_VERSION  				7.9.2
 ENV TIME_ZONE 					America/Sao_Paulo
-ENV MYSQL_CONNECTOR_VERSION		5.1.44
+ENV MYSQL_CONNECTOR_VERSION		5.1.46
 
 
-ADD https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz ${ATLASSIAN_HOME}/
+ADD ./mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz ${ATLASSIAN_HOME}/
 ADD https://downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-${JIRA_VERSION}.tar.gz ${ATLASSIAN_HOME}/
-#ADD http://192.168.1.77/atlassian-jira-software-${JIRA_VERSION}.tar.gz ${ATLASSIAN_HOME}/
 
 RUN tar -xzf ${ATLASSIAN_HOME}/atlassian-jira-software-${JIRA_VERSION}.tar.gz -C ${ATLASSIAN_HOME}/ \
-&&  tar -xzf ${ATLASSIAN_HOME}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz -C ${ATLASSIAN_HOME}/ \
+#&&  tar -xzf ${ATLASSIAN_HOME}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz -C ${ATLASSIAN_HOME}/ \
 &&  mv ${ATLASSIAN_HOME}/atlassian-jira-software-${JIRA_VERSION}-standalone ${JIRA_INSTALL} \
 &&  mv ${ATLASSIAN_HOME}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}-bin.jar ${JIRA_INSTALL}/lib/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}-bin.jar \
 &&  chmod -R u=rwx,go-rwx ${JIRA_INSTALL} \
