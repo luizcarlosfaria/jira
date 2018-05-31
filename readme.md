@@ -1,12 +1,17 @@
 # Supported tags and respective ```Dockerfile``` links
 
-* [```7.9.2```](https://github.com/docker-gallery/jira/tree/v.7.9.2), [```latest```](https://github.com/docker-gallery/jira) [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.9.2/Dockerfile)
 
-* [```7.6.0```](https://github.com/docker-gallery/jira/tree/v.7.6.0), [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.6.0/Dockerfile)
 
-* [```7.5.1```](https://github.com/docker-gallery/jira/tree/v.7.5.1)  [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.5.1/Dockerfile)
+[![Dockerfile 7.9.2](https://img.shields.io/badge/Dockerfile-v7.9.2-blue.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.9.2/Dockerfile) [![Docker Hub](https://img.shields.io/badge/DockerHub-v7.9.2-blue.svg?style=flat)](https://hub.docker.com/r/luizcarlosfaria/jira/)
 
-* [```7.3.0```](https://github.com/docker-gallery/jira/tree/v.7.3.0)  [(Dockerfile)](https://github.com/docker-gallery/jira/blob/v.7.3.0/Dockerfile)
+[![Dockerfile 7.6.0](https://img.shields.io/badge/Dockerfile-v7.6.0-lightgray.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.6.0/Dockerfile)
+
+[![Dockerfile 7.5.1](https://img.shields.io/badge/Dockerfile-v7.5.1-lightgray.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.5.1/Dockerfile)
+
+[![Dockerfile 7.3.0](https://img.shields.io/badge/Dockerfile-v7.3.0-lightgray.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.3.0/Dockerfile)
+
+
+
 
 ## How to use this image
 
