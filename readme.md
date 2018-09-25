@@ -1,8 +1,8 @@
 # Supported tags and respective ```Dockerfile``` links
 
+[![Dockerfile 7.12.1](https://img.shields.io/badge/Dockerfile-v7.12.1-blue.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.12.1/Dockerfile) [![Docker Hub](https://img.shields.io/badge/DockerHub-v7.12.1-blue.svg?style=flat)](https://hub.docker.com/r/luizcarlosfaria/jira/)
 
-
-[![Dockerfile 7.9.2](https://img.shields.io/badge/Dockerfile-v7.9.2-blue.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.9.2/Dockerfile) [![Docker Hub](https://img.shields.io/badge/DockerHub-v7.9.2-blue.svg?style=flat)](https://hub.docker.com/r/luizcarlosfaria/jira/)
+[![Dockerfile 7.9.2](https://img.shields.io/badge/Dockerfile-v7.9.2-lightgray.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.9.2/Dockerfile)
 
 [![Dockerfile 7.6.0](https://img.shields.io/badge/Dockerfile-v7.6.0-lightgray.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.6.0/Dockerfile)
 

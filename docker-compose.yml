@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   jira:
-    image: luizcarlosfaria/jira:7.9.2
+    image: luizcarlosfaria/jira:7.12.1
     ports:
       - "8081:8080"
     volumes:

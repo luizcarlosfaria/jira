@@ -4,7 +4,7 @@ ENV ATLASSIAN_HOME  			/opt/atlassian
 ENV JIRA_INSTALL    			/opt/atlassian/jira
 ENV JIRA_HOME     				/var/atlassian/application-data/jira
 ENV JIRA_EXPORT                 /var/atlassian/application-data/jira/export
-ENV JIRA_VERSION  				7.9.2
+ENV JIRA_VERSION  				7.12.1
 ENV TIME_ZONE 					America/Sao_Paulo
 ENV MYSQL_CONNECTOR_VERSION		5.1.46
 
