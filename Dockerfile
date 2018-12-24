@@ -4,7 +4,7 @@ ENV ATLASSIAN_HOME  			/opt/atlassian
 ENV JIRA_INSTALL    			/opt/atlassian/jira
 ENV JIRA_HOME     				/var/atlassian/application-data/jira
 ENV JIRA_EXPORT                 /var/atlassian/application-data/jira/export
-ENV JIRA_VERSION  				7.12.1
+ENV JIRA_VERSION  				7.13.0
 ENV TIME_ZONE 					America/Sao_Paulo
 ENV MYSQL_CONNECTOR_VERSION		5.1.46
 
@@ -22,7 +22,9 @@ RUN tar -xzf ${ATLASSIAN_HOME}/atlassian-jira-software-${JIRA_VERSION}.tar.gz -C
 &&  echo "jira.home = ${JIRA_HOME}" > ${JIRA_INSTALL}/atlassian-jira/WEB-INF/classes/jira-application.properties \
 &&  cat ${JIRA_INSTALL}/atlassian-jira/WEB-INF/classes/jira-application.properties \
 &&  sed --in-place "s/java version/openjdk version/g" "${JIRA_INSTALL}/bin/check-java.sh" \
-&&  echo "${TIME_ZONE}" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
+&&  echo "${TIME_ZONE}" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata \
+&& rm ${ATLASSIAN_HOME}/atlassian-jira-software-${JIRA_VERSION}.tar.gz \
+&& rm -r ${ATLASSIAN_HOME}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}/ 
 
 EXPOSE 8080 8005
 VOLUME ["${JIRA_HOME}"]
