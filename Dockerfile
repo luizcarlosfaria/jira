@@ -4,13 +4,12 @@ ENV ATLASSIAN_HOME  			/opt/atlassian
 ENV JIRA_INSTALL    			/opt/atlassian/jira
 ENV JIRA_HOME     				/var/atlassian/application-data/jira
 ENV JIRA_EXPORT                 /var/atlassian/application-data/jira/export
-ENV JIRA_VERSION  				7.13.0
+ENV JIRA_VERSION  				8.0.1
 ENV TIME_ZONE 					America/Sao_Paulo
 ENV MYSQL_CONNECTOR_VERSION		5.1.46
 
-
 ADD ./mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz ${ATLASSIAN_HOME}/
-ADD https://downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-${JIRA_VERSION}.tar.gz ${ATLASSIAN_HOME}/
+ADD https://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-${JIRA_VERSION}.tar.gz ${ATLASSIAN_HOME}/
 
 RUN tar -xzf ${ATLASSIAN_HOME}/atlassian-jira-software-${JIRA_VERSION}.tar.gz -C ${ATLASSIAN_HOME}/ \
 #&&  tar -xzf ${ATLASSIAN_HOME}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz -C ${ATLASSIAN_HOME}/ \
