@@ -1,6 +1,8 @@
 # Supported tags and respective ```Dockerfile``` links
-[![Dockerfile 8.0.1](https://img.shields.io/badge/Dockerfile-v8.0.1-blue.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.8.0.1/Dockerfile) [![Docker Hub](https://img.shields.io/badge/DockerHub-v8.0.1-blue.svg?style=flat)](https://hub.docker.com/r/luizcarlosfaria/jira/)
+[![Dockerfile 8.2.1](https://img.shields.io/badge/Dockerfile-v8.2.1-blue.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.8.2.1/Dockerfile) [![Docker Hub](https://img.shields.io/badge/DockerHub-v8.2.1-blue.svg?style=flat)](https://hub.docker.com/r/luizcarlosfaria/jira/)
 
+
+[![Dockerfile 7.13.0](https://img.shields.io/badge/Dockerfile-v8.0.1-lightgray.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.8.0.1/Dockerfile) 
 
 [![Dockerfile 7.13.0](https://img.shields.io/badge/Dockerfile-v7.13.0-lightgray.svg?style=flat)](https://github.com/docker-gallery/jira/blob/v.7.13.0/Dockerfile) 
 
@@ -31,7 +33,7 @@ version: '3.3'
 
 services:
   jira:
-    image: luizcarlosfaria/jira:7.9.2
+    image: luizcarlosfaria/jira:8.2.1
     ports:
       - "8081:8080"
     volumes:
