@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   jira:
-    image: luizcarlosfaria/jira:7.12.1
+    image: luizcarlosfaria/jira:8.8.0
     ports:
       - "8081:8080"
     volumes:
@@ -35,4 +35,5 @@ volumes:
 
 networks:
   LoadBalancer:
-    external: true
+    #external: true
+    driver: bridge
